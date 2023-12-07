@@ -1,4 +1,10 @@
-Field map data from the Siemens pulse sequence takes the form of one phase difference map, and two magnitude images, one for each echo time.
-The best looking magnitude image is used for registration and masking. However, the process is not particularly sensitive to the quality and typically either image will work fine.
-The phase difference map needs some post processing (through available FSL tools) to extract the correctly calibrated fieldmap in units of rad/s.
+(1) Any multi-echo gradient echo pulse sequence can be used for B0 field mapping. However, Siemens predefined pulse sequence can be easily employed for this purpose.
+
+(2) Siemens gre_field_map pulse sequence, collects two sets of images at two different echo times (i.e. by default with a 2.46ms echo time difference) per scan.
+
+(3) Field map data from the Siemens pulse sequence takes the form of one phase difference map, and two magnitude images, one for each echo time.
+
+(4) The directly generated phase difference map can be used for qualitative purposes right at the console.
+
+(5) The phase difference map needs some post processing (through available FSL tools) to extract the correctly calibrated fieldmap in units of rad/s.
 
