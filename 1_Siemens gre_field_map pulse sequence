@@ -11,3 +11,4 @@
 (6) For quantitatve analyses, such as EPI image undistortion, the generated phase difference map needs to be post-processed (e.g. through the available FSL tools) 
 to extract the correctly calibrated fieldmap in units of rad/s.
 
+(7) The magnitude images are also used for brain extraction (i.e. filtering the background noise), as a part of the field map reconstruction process.
