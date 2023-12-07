@@ -1,0 +1,4 @@
+Field map data from the Siemens pulse sequence takes the form of one phase difference map, and two magnitude images, one for each echo time.
+The best looking magnitude image is used for registration and masking. However, the process is not particularly sensitive to the quality and typically either image will work fine.
+The phase difference map needs some post processing (through available FSL tools) to extract correctly calibrated fieldmap in units of rad/s.
+
